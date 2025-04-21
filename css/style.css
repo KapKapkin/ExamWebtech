@@ -1,0 +1,88 @@
+/* Основные стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    header .d-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header nav {
+        margin-top: 1rem;
+    }
+    
+    header .nav {
+        justify-content: center;
+    }
+}
+
+/* Стили для таблиц */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th {
+    white-space: nowrap;
+}
+
+/* Стили для кнопок */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Стили для модальных окон */
+.modal-content {
+    border-radius: 0.5rem;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Стили для уведомлений */
+.alert {
+    margin-bottom: 1rem;
+}
+
+/* Стили для карты */
+#map {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Дополнительные утилиты */
+.gap-2 {
+    gap: 0.5rem;
+}
