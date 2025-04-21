@@ -1,7 +1,7 @@
 class ExamAPI {
     constructor(apiKey) {
         this.apiKey = apiKey;
-        this.baseUrl = 'http://exam-api-courses.std-900.ist.mospolytech.ru/api';
+        this.baseUrl = 'https://exam-api-courses.std-900.ist.mospolytech.ru/api';
     }
     
     async request(endpoint, method = 'GET', data = null) {
